@@ -7,8 +7,8 @@
 
 body{
     background-image: linear-gradient(to bottom, rgb(7, 99, 130), rgb(210, 142, 154));
-    background-repeat: no-repeat;
-    height: 200vh;
+    background-repeat: repeat;
+    height: 300vh;
 }
 
 header{
@@ -22,6 +22,10 @@ header{
 .website-name{
     font-size: 30px;
     color: white;
+}
+
+.website-name h3 span{
+    font-size: 20px;
 }
 
 .center-nav ul{
@@ -130,40 +134,70 @@ color: blanchedalmond;
 
 .list-works{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     gap: 50px;
     margin-top: 50px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    transition: ease-in 0.5s;
 }
 
 .card{
     background-color: white;
     color: black;
-    width: 300px;
-    height: 400px;
+    height: 450px;
     border-radius: 15px;
-    position: relative;
     padding: 10px;
     display: flex;
+    flex: 1 0 350px;
     flex-direction: column;
     box-shadow: 3px 3px grey;
 }
 
-.card-image img{
-    position: absolute;
-    left: 10px;
-    top: 10px; 
-    width: 94%;
-    height: 270px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 10px;
+.card:hover{
+    transform: translateY(30px);
 }
 
-.card-title{
+.card-image img{
     width: 100%;
-    height: 30px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px black;
+}
+
+.card-title p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 400;
+    border-top: 2px solid rgb(142, 132, 132);
+    padding-top: 20px;
+}
+
+.feedback{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.feedback h1{
+    font-size: 30px;
+    color: white;
+}
+
+.feedback-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 100px;
+    flex-direction: column;
+}
+
+.container-feedback{
+    flex: 1 0 100px;
+    background-color: white;
 }
 
